@@ -22,6 +22,9 @@ setup(
         ]
     },
     
+    requires=[
+        'django-admin-jqueryui',
+    ]
     install_requires = ['setuptools'],
     zip_safe = False
 )

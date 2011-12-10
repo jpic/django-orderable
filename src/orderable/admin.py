@@ -12,8 +12,7 @@ class OrderableAdmin(admin.ModelAdmin):
     change_list_template = 'orderable/change_list.html'
     
     class Media:
-        js = (JQUERY_URL, JQUERYUI_URL,
-              posixpath.join(ORDERABLE_STATIC_URL, 'orderable/orderable.js'))
+        js = (posixpath.join(ORDERABLE_STATIC_URL, 'orderable/orderable.js'),)
     
     def __init__(self, *args, **kwargs):
         super(OrderableAdmin, self).__init__(*args, **kwargs)
